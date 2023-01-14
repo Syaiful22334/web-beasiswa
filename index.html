@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Beasiswa</title>
+    <style>
+      body {
+        background-image: url("bg.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .rounded {
+        background-color: #fff;
+        width: 50px;
+        height: 50px;
+      }
+
+      .container-1 {
+        /* background-color: lightgreen; */
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(208, 255, 221, 1) 62%,
+          rgba(205, 255, 219, 1) 72%
+        );
+        border-radius: 10px;
+      }
+
+      .container-2 {
+        background-color: #a2d9ff;
+      }
+
+      .col-3 {
+        border-radius: 10px;
+      }
+      .text-menu {
+        width: 100%;
+        background-color: #c2c2c2;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+    <!-- navbar -->
+    <nav class="navbar shadow navbar-expand-lg bg-primary navbar-dark">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Beasiswa</a> -->
+        <img
+          class="img-fluid me-4"
+          width="150"
+          src="assets/logo.png"
+          alt="beasiswa png" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+            <a class="nav-link" href="#">Tentang Kami</a>
+            <a class="nav-link" href="#">Contact</a>
+            <!-- <a class="nav-link disabled">Disabled</a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="shadow text-center pt-3 pe-3 pb-3 ps-3 mt-5 container-1">
+        <div class="box">
+          <div class="text">
+            <h2>KATEGORI BEASISWA</h2>
+            <p class="text-secondary">
+              Sudah Lebih Dari 1000 Orang Mendapat Beasiswa Kami
+              <br />
+              Dan 100%
+              <span
+                style="background-color: yellow"
+                class="ps-2 pt-1 pe-2 pb-1 text-dark"
+                >Gratis</span
+              >
+            </p>
+            <a class="btn btn-primary" href="login.html">Daftar Sekarang</a>
+          </div>
+        </div>
+      </div>
+      <div class="menu-section mt-5">
+        <p class="text-menu w-100 text-center pt-3 pb-3 mb-4 mt-4">
+          Jalur Jalur Penerimaan Beasiswa
+        </p>
+        <div class="d-flex justify-content-around text-light row">
+          <div
+            class="bg-primary text-center shadow-lg pt-3 pb-3 ps-3 pe-3 col-3">
+            <!-- <div class="rounded rounded-circle">
+              <img src="assets/buku.png" width="50" alt="book" />
+            </div> -->
+            Beasiswa Siswa Berprestasi
+          </div>
+          <div class="bg-success shadow-lg pt-3 pb-3 ps-3 pe-3 col-3">
+            Beasiswa Kurang Mampu
+          </div>
+          <div class="bg-warning shadow-lg pt-3 pb-3 ps-3 pe-3 col-3">
+            Beasiswa dengan Test
+          </div>
+        </div>
+        <svg
+          class="w-100"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320">
+          <path
+            fill="#a2d9ff"
+            fill-opacity="1"
+            d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,138.7C672,139,768,181,864,192C960,203,1056,181,1152,170.7C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+      <div class="container-2 text-center">
+        <!-- <div class="requiretment"> -->
+        <h5 class="mb-4">Syarat Dan Ketentuan :</h5>
+        <ul class="text-seccondary">
+          <li>Pelajar jenjang SMA/SMK Sederajat</li>
+          <li>Pelamar mengisi link pendaftaran</li>
+          <li>Siap mengikuti pelatihan bila diadakan</li>
+        </ul>
+
+        <h5 class="mb-4 mt-5">TimeLine</h5>
+        <ul class="text-seccondary">
+          <li>Pembukaan pendaftaran : 28 Desember 2022 sd 15 Februari 2023</li>
+          <li>wawancara : 17 Februari 2023 - 25 Februari 2023</li>
+          <!-- <li>Siap mengikuti pelatihan bila diadakan</li> -->
+        </ul>
+        <!-- </div> -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,160L48,154.7C96,149,192,139,288,144C384,149,480,171,576,160C672,149,768,107,864,122.7C960,139,1056,213,1152,202.7C1248,192,1344,96,1392,48L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+      <div class="benefit mb-5 text-center">
+        <h5>Benefit nya apa aja sih yang didapetin ??</h5>
+        <ol>
+          <li>Uang per Semester up to Rp.10.000.000,00</li>
+          <li>Uang Kos Senilai Rp.5.000.000</li>
+          <li>Satu Unit Laptop dan Smartphone</li>
+          <li>Uang Jajan Sebesar Rp.1.500.000,00</li>
+        </ol>
+      </div>
+    </div>
+    <footer class="bg-dark pt-4 pb-4 text-center text-light">
+      Penuh Cinta Beasiswaku@gmail.com
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
